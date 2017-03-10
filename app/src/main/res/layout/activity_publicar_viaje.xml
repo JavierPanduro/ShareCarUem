@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Origen:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etOrigen"
+                android:hint="Introduzca su punto de partida"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="Destino:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDestino"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etDestino"
+                android:textSize="16sp"
+                android:hint="Introduzca su destino" />
+
+            <TextView
+                android:text="Fecha:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFecha"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/etFecha"
+                android:hint="dd/mm/aaaa"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="Hora:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHora"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="10"
+                android:id="@+id/etHora"
+                android:hint="hh:mm"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="Precio del Viaje:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPrecio"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/etPrecio"
+                android:textSize="16sp"
+                android:hint="Introduzca el precio en €" />
+
+            <TextView
+                android:text="Descripción:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescripcion"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/etDescripcion"
+                android:textSize="16sp"
+                android:hint="Introduzca una descripción del viaje, vehículo, horarios..." />
+
+            <TextView
+                android:text="Nº de Plazas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPlazas"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/etPlazas"
+                android:hint="Introduzca número de plazas"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:text="Tiene usted Coche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cocheyes" />
+
+            <Button
+                android:text="Publicar"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPublicar"
+                android:textSize="18sp"
+                android:background="@drawable/boton_estandar"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#FA9696" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
